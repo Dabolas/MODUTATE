@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework><LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="EmbeddedLibrary"/>
+    <ProjectReference Include="../../migration/forge-aot/Forge.Generated.csproj"/>
+    <ProjectReference Include="../Forge.Aot/Forge.Aot.csproj"/>
+    <Compile Include="../Forge.ConsoleHost/AotDamageBridge.Runtime.cs;../Forge.ConsoleHost/AotCardReader.cs;../Forge.ConsoleHost/CardDatabase.cs;../Forge.ConsoleHost/ConsoleLocalization.cs;../Forge.ConsoleHost/ConsoleEnvironment.cs"/>
+    <Compile Include="../../tests/ForgeIgnition/L3Game.cs;../../tests/ForgeIgnition/CatalogueFaceStream.cs;../../tests/ForgeIgnition/HostDecisionGap.cs"/>
+    <Compile Include="../../tests/ForgeIgnition/HeadlessDecisions.cs;../../tests/ForgeIgnition/HeadlessModalCosts.cs;../../tests/ForgeIgnition/HeadlessCosts.cs;../../tests/ForgeIgnition/ControllerSupport.cs"/>
+    <Compile Include="../Planeswalker.Core/MatchView.cs"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+</Project>

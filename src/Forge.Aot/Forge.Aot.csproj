@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><LangVersion>latest</LangVersion><Nullable>enable</Nullable><CheckForOverflowUnderflow>false</CheckForOverflowUnderflow></PropertyGroup>
+  <ItemGroup><EmbeddedResource Include="Unicode13/*.txt" /></ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+  "forgeCommit": "f818e4b2751a8237c5e1ba35248f6373745217aa",
+  "java": {
+    "version": "Temurin 17.0.21+9",
+    "directory": "jdk-17.0.21+9",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_windows_hotspot_17.0.21_9.zip",
+    "sha256": "98518ECF554465057EE5509462631DEEEE374BC368C12A411D225CD29381F84B"
+  },
+  "maven": {
+    "version": "3.9.11",
+    "url": "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip",
+    "sha256": "0D7125E8C91097B36EDB990EA5934E6C68B4440EEF4EA96510A0F6815E7EEADB"
+  }
+}

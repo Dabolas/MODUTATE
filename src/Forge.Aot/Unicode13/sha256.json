@@ -1,0 +1,22 @@
+[
+  {
+    "file": "DerivedCoreProperties.txt",
+    "sha256": "a5d45f59b39deaab3c72ce8c1a2e212a5e086dff11b1f9d5bb0e352642e82248",
+    "source": "https://www.unicode.org/Public/13.0.0/ucd/DerivedCoreProperties.txt"
+  },
+  {
+    "file": "PropList.txt",
+    "sha256": "485b5a3ed25dbf1f94dfa5a9b69d8b4550ffd0c33045ccc55ccfd7c80b2a40cf",
+    "source": "https://www.unicode.org/Public/13.0.0/ucd/PropList.txt"
+  },
+  {
+    "file": "SpecialCasing.txt",
+    "sha256": "6424312f1dc39b22e0ff9c0ffb13dfad424d9b03e6a6dc6bca941f6bf5ef1ffd",
+    "source": "https://www.unicode.org/Public/13.0.0/ucd/SpecialCasing.txt"
+  },
+  {
+    "file": "UnicodeData.txt",
+    "sha256": "bdbffbbfc8ad4d3a6d01b5891510458f3d36f7170422af4ea2bed3211a73e8bb",
+    "source": "https://www.unicode.org/Public/13.0.0/ucd/UnicodeData.txt"
+  }
+]

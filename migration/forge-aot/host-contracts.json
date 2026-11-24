@@ -1,0 +1,2290 @@
+[
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "isAI",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getGame",
+    "Descriptor": "()Lforge/game/Game;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getMatch",
+    "Descriptor": "()Lforge/game/Match;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getPlayer",
+    "Descriptor": "()Lforge/game/player/Player;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getLobbyPlayer",
+    "Descriptor": "()Lforge/LobbyPlayer;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "tempShowCards",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "endTempShowCards",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getAbilityToPlay",
+    "Descriptor": "(Lforge/game/card/Card;Ljava/util/List;)Lforge/game/spellability/SpellAbility;",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getAbilityToPlay",
+    "Descriptor": "(Lforge/game/card/Card;Ljava/util/List;Lforge/util/ITriggerEvent;)Lforge/game/spellability/SpellAbility;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "playSpellAbilityNoStack",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Z)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderSimultaneousSa",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderAndPlaySimultaneousSa",
+    "Descriptor": "(Ljava/util/List;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "playedByTeammate",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 20,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "playTrigger",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/trigger/WrappedAbility;Z)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "playSaFromPlayEffect",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "sideboard",
+    "Descriptor": "(Lforge/deck/Deck;Lforge/game/GameType;Ljava/lang/String;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "sideboardsByItself",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getSideboardingReport",
+    "Descriptor": "()Ljava/util/List;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsYouWonToAddToDeck",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "assignCombatDamage",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/card/CardCollectionView;Lforge/game/card/CardCollectionView;ILforge/game/GameEntity;Z)Ljava/util/Map;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "divideShield",
+    "Descriptor": "(Lforge/game/card/Card;Ljava/util/Map;I)Ljava/util/Map;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "specifyManaCombo",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/card/ColorSet;IZ)Ljava/util/Map;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "choosePermanentsToSacrifice",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;IILforge/game/card/CardCollectionView;Ljava/lang/String;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "choosePermanentsToDestroy",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;IILforge/game/card/CardCollectionView;Ljava/lang/String;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "announceRequirements",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;IILjava/lang/String;)Ljava/lang/Integer;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseNewTargetsFor",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/function/Predicate;Z)Lforge/game/spellability/TargetChoices;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseTargetsFor",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseTarget",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;)Lorg/apache/commons/lang3/tuple/Pair;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "helpPayForAssistSpell",
+    "Descriptor": "(Lforge/game/mana/ManaCostBeingPaid;Lforge/game/spellability/SpellAbility;II)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "choosePlayerToAssistPayment",
+    "Descriptor": "(Lforge/util/collect/FCollectionView;Lforge/game/spellability/SpellAbility;Ljava/lang/String;I)Lforge/game/player/Player;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsForEffect",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;Lforge/game/spellability/SpellAbility;Ljava/lang/String;IIZLjava/util/Map;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsForEffectMultiple",
+    "Descriptor": "(Ljava/util/Map;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Z)Lforge/game/card/CardCollection;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleEntityForEffect",
+    "Descriptor": "(Lforge/util/collect/FCollectionView;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Ljava/util/Map;)Lforge/game/GameEntity;",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleEntityForEffect",
+    "Descriptor": "(Lforge/util/collect/FCollectionView;Lforge/game/spellability/SpellAbility;Ljava/lang/String;ZLjava/util/Map;)Lforge/game/GameEntity;",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleEntityForEffect",
+    "Descriptor": "(Lforge/util/collect/FCollectionView;Lforge/game/player/DelayedReveal;Lforge/game/spellability/SpellAbility;Ljava/lang/String;ZLforge/game/player/Player;Ljava/util/Map;)Lforge/game/GameEntity;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseEntitiesForEffect",
+    "Descriptor": "(Lforge/util/collect/FCollectionView;IILforge/game/player/DelayedReveal;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/player/Player;Ljava/util/Map;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSpellAbilitiesForEffect",
+    "Descriptor": "(Ljava/util/List;Lforge/game/spellability/SpellAbility;Ljava/lang/String;ILjava/util/Map;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleSpellForEffect",
+    "Descriptor": "(Ljava/util/List;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Ljava/util/Map;)Lforge/game/spellability/SpellAbility;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmAction",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/player/PlayerActionConfirmMode;Ljava/lang/String;Ljava/util/Map;)Z",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmAction",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/player/PlayerActionConfirmMode;Ljava/lang/String;Lforge/game/card/Card;Ljava/util/Map;)Z",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmAction",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/player/PlayerActionConfirmMode;Ljava/lang/String;Ljava/util/List;Lforge/game/card/Card;Ljava/util/Map;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmBidAction",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/player/PlayerActionConfirmMode;Ljava/lang/String;ILforge/game/player/Player;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmReplacementEffect",
+    "Descriptor": "(Lforge/game/replacement/ReplacementEffect;Lforge/game/spellability/SpellAbility;Lforge/game/GameEntity;Ljava/lang/String;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmStaticApplication",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/player/PlayerActionConfirmMode;Ljava/lang/String;Ljava/lang/String;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmTrigger",
+    "Descriptor": "(Lforge/game/trigger/WrappedAbility;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "exertAttackers",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "enlistAttackers",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "declareAttackers",
+    "Descriptor": "(Lforge/game/player/Player;Lforge/game/combat/Combat;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "declareBlockers",
+    "Descriptor": "(Lforge/game/player/Player;Lforge/game/combat/Combat;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderBlockers",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/card/CardCollection;)Lforge/game/card/CardCollection;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderBlocker",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/card/Card;Lforge/game/card/CardCollection;)Lforge/game/card/CardCollection;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderAttackers",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/card/CardCollection;)Lforge/game/card/CardCollection;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "reveal",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;Lforge/game/zone/ZoneType;Lforge/game/player/Player;)V",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "reveal",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;Lforge/game/zone/ZoneType;Lforge/game/player/Player;Ljava/lang/String;)V",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "reveal",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;Lforge/game/zone/ZoneType;Lforge/game/player/Player;Ljava/lang/String;Z)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "reveal",
+    "Descriptor": "(Ljava/util/List;Lforge/game/zone/ZoneType;Lforge/game/player/PlayerView;Ljava/lang/String;)V",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "reveal",
+    "Descriptor": "(Lforge/game/player/DelayedReveal;)V",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "reveal",
+    "Descriptor": "(Ljava/util/List;Lforge/game/zone/ZoneType;Lforge/game/player/PlayerView;Ljava/lang/String;Z)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "notifyOfValue",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/GameObject;Ljava/lang/String;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "arrangeForScry",
+    "Descriptor": "(Lforge/game/card/CardCollection;)Lorg/apache/commons/lang3/tuple/ImmutablePair;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "arrangeForSurveil",
+    "Descriptor": "(Lforge/game/card/CardCollection;)Lorg/apache/commons/lang3/tuple/ImmutablePair;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "willPutCardOnTop",
+    "Descriptor": "(Lforge/game/card/Card;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderMoveToZoneList",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;Lforge/game/zone/ZoneType;Lforge/game/spellability/SpellAbility;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderedMoveToTopOfLibrary",
+    "Descriptor": "(Lforge/game/zone/ZoneType;Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 4,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsToDiscardFrom",
+    "Descriptor": "(Lforge/game/player/Player;Lforge/game/spellability/SpellAbility;Lforge/game/card/CardCollection;II)Lforge/game/card/CardCollectionView;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsToDiscardFrom",
+    "Descriptor": "(Lforge/game/player/Player;Lforge/game/spellability/SpellAbility;Lforge/game/card/CardCollection;IILforge/game/card/CardCollectionView;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsToDiscardUnlessType",
+    "Descriptor": "(ILforge/game/card/CardCollectionView;[Ljava/lang/String;Lforge/game/spellability/SpellAbility;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsToDiscardToMaximumHandSize",
+    "Descriptor": "(I)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsToDelve",
+    "Descriptor": "(ILforge/game/card/CardCollection;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsForConvokeOrImprovise",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/card/mana/ManaCost;Lforge/game/card/CardCollectionView;ZZLjava/lang/Integer;)Ljava/util/Map;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsForSplice",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsToRevealFromHand",
+    "Descriptor": "(IILforge/game/card/CardCollectionView;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSaToActivateFromOpeningHand",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseStartingPlayer",
+    "Descriptor": "(Z)Lforge/game/player/Player;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseStartingHand",
+    "Descriptor": "(Ljava/util/List;)Lforge/game/zone/PlayerZone;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseManaFromPool",
+    "Descriptor": "(Ljava/util/List;)Lforge/game/mana/Mana;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSomeType",
+    "Descriptor": "(Ljava/lang/String;Lforge/game/spellability/SpellAbility;Ljava/util/Collection;Z)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSomeType",
+    "Descriptor": "(Ljava/lang/String;Lforge/game/spellability/SpellAbility;Ljava/util/Collection;)Ljava/lang/String;",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSector",
+    "Descriptor": "(Lforge/game/card/Card;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSticker",
+    "Descriptor": "(Ljava/util/List;Lforge/game/card/Card;Lforge/game/spellability/SpellAbility;Z)Lforge/game/card/sticker/Sticker;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseStickerNamePosition",
+    "Descriptor": "(Lforge/game/card/sticker/Sticker;Lforge/game/card/Card;)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardToKeepStickers",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;)Lforge/game/card/Card;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSector",
+    "Descriptor": "(Lforge/game/card/Card;Ljava/lang/String;)Ljava/lang/String;",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseContraptionsToCrank",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSprocket",
+    "Descriptor": "(Lforge/game/card/Card;Ljava/util/List;)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSprocket",
+    "Descriptor": "(Lforge/game/card/Card;)I",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "choosePDRollToIgnore",
+    "Descriptor": "(Ljava/util/List;)Lforge/game/PlanarDice;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseRollToIgnore",
+    "Descriptor": "(Ljava/util/List;)Ljava/lang/Integer;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseDiceToReroll",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseRollToModify",
+    "Descriptor": "(Ljava/util/List;)Ljava/lang/Integer;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseRollToSwap",
+    "Descriptor": "(Ljava/util/List;)Lforge/game/ability/effects/RollDiceEffect$DieRollResult;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseRollSwapValue",
+    "Descriptor": "(Ljava/util/List;Ljava/lang/Integer;II)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "vote",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;Ljava/util/List;Lcom/google/common/collect/ListMultimap;Lforge/game/player/Player;Z)Ljava/lang/Object;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "mulliganKeepHand",
+    "Descriptor": "(Lforge/game/player/Player;I)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "tuckCardsViaMulligan",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;I)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSpellAbilityToPlay",
+    "Descriptor": "()Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "playChosenSpellAbility",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseModeForAbility",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;IIZ)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseNumberForCostReduction",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;II)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseNumberForKeywordCost",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/cost/Cost;Lforge/game/keyword/KeywordInterface;Ljava/lang/String;I)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "addKeywordCost",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/cost/Cost;Lforge/game/keyword/KeywordInterface;Ljava/lang/String;)Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseNumber",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;II)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseNumber",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;Ljava/util/List;Lforge/game/player/Player;)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseNumber",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;IILjava/util/Map;)I",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseBinary",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/player/PlayerController$BinaryChoiceType;)Z",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseBinary",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/player/PlayerController$BinaryChoiceType;Ljava/lang/Boolean;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseBinary",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/player/PlayerController$BinaryChoiceType;Ljava/util/Map;)Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseFlipResult",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/player/Player;Z)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseColor",
+    "Descriptor": "(Ljava/lang/String;Lforge/game/spellability/SpellAbility;Lforge/card/ColorSet;)B",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseColorAllowColorless",
+    "Descriptor": "(Ljava/lang/String;Lforge/game/card/Card;Lforge/card/ColorSet;)B",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseColors",
+    "Descriptor": "(Ljava/lang/String;Lforge/game/spellability/SpellAbility;IILforge/card/ColorSet;)Lforge/card/ColorSet;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleCardFace",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/lang/String;Ljava/util/function/Predicate;Ljava/lang/String;)Lforge/card/ICardFace;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleCardFace",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;Ljava/lang/String;)Lforge/card/ICardFace;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleCardState",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;Ljava/lang/String;Ljava/util/Map;)Lforge/game/card/CardState;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsPile",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Lforge/game/card/CardCollectionView;Lforge/game/card/CardCollectionView;Ljava/lang/String;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCounterType",
+    "Descriptor": "(Ljava/util/List;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Ljava/util/Map;)Lforge/game/card/CounterType;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseKeywordForPump",
+    "Descriptor": "(Ljava/util/List;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/card/Card;)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "confirmPayment",
+    "Descriptor": "(Lforge/game/cost/CostPart;Ljava/lang/String;Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleReplacementEffect",
+    "Descriptor": "(Ljava/util/List;)Lforge/game/replacement/ReplacementEffect;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleStaticAbility",
+    "Descriptor": "(Ljava/util/List;)Lforge/game/staticability/StaticAbility;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseProtectionType",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "revealAnte",
+    "Descriptor": "(Ljava/lang/String;Lcom/google/common/collect/Multimap;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "revealAISkipCards",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/Map;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "revealUnsupported",
+    "Descriptor": "(Ljava/util/Map;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "cheatShuffle",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;)Lforge/game/card/CardCollectionView;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "complainCardsCantPlayWell",
+    "Descriptor": "(Lforge/deck/Deck;)Ljava/util/Map;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "resetAtEndOfTurn",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseOptionalCosts",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "orderCosts",
+    "Descriptor": "(Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "payCostToPreventEffect",
+    "Descriptor": "(Lforge/game/cost/Cost;Lforge/game/spellability/SpellAbility;ZLforge/util/collect/FCollectionView;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "payCostDuringRoll",
+    "Descriptor": "(Lforge/game/cost/Cost;Lforge/game/spellability/SpellAbility;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "payCombatCost",
+    "Descriptor": "(Lforge/game/card/Card;Lforge/game/cost/Cost;Lforge/game/spellability/SpellAbility;Ljava/lang/String;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "payManaCost",
+    "Descriptor": "(Lforge/game/cost/CostPartMana;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/mana/ManaConversionMatrix;Z)Z",
+    "Access": 17,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "payManaCost",
+    "Descriptor": "(Lforge/card/mana/ManaCost;Lforge/game/cost/CostPartMana;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/mana/ManaConversionMatrix;Z)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "applyManaToCost",
+    "Descriptor": "(Lforge/game/mana/ManaCostBeingPaid;Lforge/game/spellability/SpellAbility;Ljava/lang/String;Lforge/game/mana/ManaConversionMatrix;Z)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsForCost",
+    "Descriptor": "(Lforge/game/card/CardCollectionView;Lforge/game/spellability/SpellAbility;Lforge/game/cost/CostPartWithList;IZLjava/lang/String;)Lforge/game/card/CardCollectionView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getCostDecisionMaker",
+    "Descriptor": "(Lforge/game/player/Player;Lforge/game/spellability/SpellAbility;Z)Lforge/game/cost/CostDecisionMakerBase;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getCostDecisionMaker",
+    "Descriptor": "(Lforge/game/player/Player;Lforge/game/spellability/SpellAbility;ZLjava/lang/String;)Lforge/game/cost/CostDecisionMakerBase;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardName",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/function/Predicate;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardName",
+    "Descriptor": "(Lforge/game/spellability/SpellAbility;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseSingleCardForZoneChange",
+    "Descriptor": "(Lforge/game/zone/ZoneType;Ljava/util/List;Lforge/game/spellability/SpellAbility;Lforge/game/card/CardCollection;Lforge/game/player/DelayedReveal;Ljava/lang/String;ZLforge/game/player/Player;)Lforge/game/card/Card;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "chooseCardsForZoneChange",
+    "Descriptor": "(Lforge/game/zone/ZoneType;Ljava/util/List;Lforge/game/spellability/SpellAbility;Lforge/game/card/CardCollection;IILforge/game/player/DelayedReveal;Ljava/lang/String;Lforge/game/player/Player;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getFullControl",
+    "Descriptor": "()Ljava/util/Set;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "isFullControl",
+    "Descriptor": "(Lforge/game/player/PlayerController$FullControlFlag;)Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "autoPassCancel",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "awaitNextInput",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "cancelAwaitNextInput",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "isGuiPlayer",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "canPlayUnlimitedLands",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "getAnteResult",
+    "Descriptor": "()Lforge/game/GameOutcome$AnteResult;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/game/player/PlayerController",
+    "Name": "isOrderedZone",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "isLibgdxPort",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setGameView",
+    "Descriptor": "(Lforge/game/GameView;J)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setGameView",
+    "Descriptor": "(Lforge/game/GameView;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getGameView",
+    "Descriptor": "()Lforge/game/GameView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setOriginalGameController",
+    "Descriptor": "(Lforge/game/player/PlayerView;Lforge/interfaces/IGameController;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setGameController",
+    "Descriptor": "(Lforge/game/player/PlayerView;Lforge/interfaces/IGameController;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setSpectator",
+    "Descriptor": "(Lforge/interfaces/IGameController;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "openView",
+    "Descriptor": "(Lforge/trackable/TrackableCollection;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "afterGameEnd",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showCombat",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showPromptMessage",
+    "Descriptor": "(Lforge/game/player/PlayerView;Ljava/lang/String;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showPromptMessage",
+    "Descriptor": "(Lforge/game/player/PlayerView;Ljava/lang/String;Lforge/game/card/CardView;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateDrawOffer",
+    "Descriptor": "(Lforge/gamemodes/match/DrawOfferMessage$Status;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateButtons",
+    "Descriptor": "(Lforge/game/player/PlayerView;ZZZ)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateButtons",
+    "Descriptor": "(Lforge/game/player/PlayerView;Ljava/lang/String;Ljava/lang/String;ZZZ)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateButtons",
+    "Descriptor": "(Lforge/game/player/PlayerView;Ljava/lang/String;Ljava/lang/String;ZZZZ)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showCoinFlip",
+    "Descriptor": "(ZLjava/lang/String;Z)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showFlipOntoBattlefield",
+    "Descriptor": "(Lforge/game/card/CardView;Lforge/game/card/CardView;Ljava/util/List;Ljava/util/List;I)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "endFlipOntoBattlefield",
+    "Descriptor": "(Lforge/game/card/CardView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "flashIncorrectAction",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "alertUser",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updatePhase",
+    "Descriptor": "(Z)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateTurn",
+    "Descriptor": "(Lforge/game/player/PlayerView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updatePlayerControl",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "enableOverlay",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "disableOverlay",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "finishGame",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showManaPool",
+    "Descriptor": "(Lforge/game/player/PlayerView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "hideManaPool",
+    "Descriptor": "(Lforge/game/player/PlayerView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateStack",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "onSnapshotRestored",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "notifyStackAddition",
+    "Descriptor": "(Lforge/game/event/GameEventSpellAbilityCast;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "notifyStackRemoval",
+    "Descriptor": "(Lforge/game/event/GameEventSpellRemovedFromStack;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "handleLandPlayed",
+    "Descriptor": "(Lforge/game/card/CardView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "handleGameEvent",
+    "Descriptor": "(Lforge/game/event/GameEvent;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "handleGameEvents",
+    "Descriptor": "(Ljava/util/List;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateZones",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateCard",
+    "Descriptor": "(Lforge/game/card/CardView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateCards",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateCardsNetSafe",
+    "Descriptor": "(Lforge/util/collect/FCollectionView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "refreshCardDetails",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "refreshField",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateManaPool",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateLives",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateShards",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateDependencies",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setPanelSelection",
+    "Descriptor": "(Lforge/game/card/CardView;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getAbilityToPlay",
+    "Descriptor": "(Lforge/game/card/CardView;Ljava/util/List;Lforge/util/ITriggerEvent;)Lforge/game/spellability/SpellAbilityView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "assignCombatDamage",
+    "Descriptor": "(Lforge/game/card/CardView;Ljava/util/List;ILforge/game/GameEntityView;ZZ)Ljava/util/Map;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "assignGenericAmount",
+    "Descriptor": "(Lforge/game/card/CardView;Ljava/util/Map;IZLjava/lang/String;)Ljava/util/Map;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "message",
+    "Descriptor": "(Ljava/lang/String;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "message",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showErrorDialog",
+    "Descriptor": "(Ljava/lang/String;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showErrorDialog",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showConfirmDialog",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;)Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showConfirmDialog",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showConfirmDialog",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showOptionDialog",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;Lforge/localinstance/skin/FSkinProp;Ljava/util/List;I)I",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showInputDialog",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;Lforge/localinstance/skin/FSkinProp;Ljava/lang/String;Ljava/util/List;Z)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "confirm",
+    "Descriptor": "(Lforge/game/card/CardView;Ljava/lang/String;)Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "confirm",
+    "Descriptor": "(Lforge/game/card/CardView;Ljava/lang/String;ZLjava/util/List;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getChoices",
+    "Descriptor": "(Ljava/lang/String;IILjava/util/List;)Ljava/util/List;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getChoices",
+    "Descriptor": "(Ljava/lang/String;IILjava/util/List;Ljava/util/List;Lforge/util/FSerializableFunction;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getInteger",
+    "Descriptor": "(Ljava/lang/String;IIZ)Ljava/lang/Integer;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getInteger",
+    "Descriptor": "(Ljava/lang/String;III)Ljava/lang/Integer;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "oneOrNone",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/List;)Ljava/lang/Object;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "one",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/List;)Ljava/lang/Object;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "one",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/List;Lforge/util/FSerializableFunction;)Ljava/lang/Object;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "reveal",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/List;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "many",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;Lforge/game/card/CardView;)Ljava/util/List;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "many",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;IILjava/util/List;Lforge/game/card/CardView;)Ljava/util/List;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "many",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;IILjava/util/List;Ljava/util/List;Lforge/game/card/CardView;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "order",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lforge/game/card/CardView;)Ljava/util/List;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "order",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;IILjava/util/List;Ljava/util/List;Lforge/game/card/CardView;Z)Ljava/util/List;",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "order",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/String;IILjava/util/List;Ljava/util/List;Lforge/game/card/CardView;ZZ)Lforge/gui/interfaces/IGuiGame$OrderResult;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "insertInList",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "sideboard",
+    "Descriptor": "(Lforge/deck/CardPool;Lforge/deck/CardPool;Ljava/lang/String;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "chooseSingleEntityForEffect",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/List;Lforge/game/player/DelayedReveal;Z)Lforge/game/GameEntityView;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "chooseEntitiesForEffect",
+    "Descriptor": "(Ljava/lang/String;Ljava/util/List;IILforge/game/player/DelayedReveal;)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "manipulateCardList",
+    "Descriptor": "(Ljava/lang/String;Ljava/lang/Iterable;Ljava/lang/Iterable;ZZZ)Ljava/util/List;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setCard",
+    "Descriptor": "(Lforge/game/card/CardView;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setPlayerAvatar",
+    "Descriptor": "(Lforge/LobbyPlayer;Lforge/game/player/IHasIcon;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "openZones",
+    "Descriptor": "(Lforge/game/player/PlayerView;Ljava/util/Collection;Ljava/util/Map;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setSelection",
+    "Descriptor": "(Lforge/gamemodes/match/Selection;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "canPickStackTargets",
+    "Descriptor": "()Z",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "isSelecting",
+    "Descriptor": "()Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "showRevealedCards",
+    "Descriptor": "(Ljava/lang/Iterable;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "hideRevealedCards",
+    "Descriptor": "()V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "isGamePaused",
+    "Descriptor": "()Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setGamePause",
+    "Descriptor": "(Z)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getGameSpeed",
+    "Descriptor": "()Lforge/gui/control/PlaybackSpeed;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setGameSpeed",
+    "Descriptor": "(Lforge/gui/control/PlaybackSpeed;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "getDayTime",
+    "Descriptor": "()Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateDayTime",
+    "Descriptor": "(Ljava/lang/String;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "awaitNextInput",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "cancelAwaitNextInput",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "updateAutoPassPrompt",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setCurrentPlayer",
+    "Descriptor": "(Lforge/game/player/PlayerView;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "isUiSetToSkipPhase",
+    "Descriptor": "(Lforge/game/player/PlayerView;Lforge/game/phase/PhaseType;)Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "refreshYieldUi",
+    "Descriptor": "(Lforge/game/player/PlayerView;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "applyYieldUpdate",
+    "Descriptor": "(Lforge/gamemodes/match/YieldUpdate;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "applyMacroState",
+    "Descriptor": "(Lforge/interfaces/IMacroSystem$State;)V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "applyDelta",
+    "Descriptor": "(Lforge/gamemodes/net/DeltaPacket;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "awaitInput",
+    "Descriptor": "(Ljava/util/concurrent/CountDownLatch;)V",
+    "Access": 1,
+    "Direction": "engine-to-host",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "isNetGame",
+    "Descriptor": "()Z",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/gui/interfaces/IGuiGame",
+    "Name": "setNetGame",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "engine-to-host",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "mayLookAtAllCards",
+    "Descriptor": "()Z",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "canPlayUnlimitedLands",
+    "Descriptor": "()Z",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "concede",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "drawOfferAction",
+    "Descriptor": "(Lforge/gamemodes/match/DrawOfferMessage$Action;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "alphaStrike",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "useMana",
+    "Descriptor": "(B)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "selectButtonOk",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "selectButtonCancel",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "selectPlayer",
+    "Descriptor": "(Lforge/game/player/PlayerView;Lforge/util/ITriggerEvent;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "selectCard",
+    "Descriptor": "(Lforge/game/card/CardView;Ljava/util/List;Lforge/util/ITriggerEvent;)Z",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "selectAbility",
+    "Descriptor": "(Lforge/game/spellability/SpellAbilityView;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "selectStackItem",
+    "Descriptor": "(Lforge/game/spellability/StackItemView;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "undoLastAction",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "cheat",
+    "Descriptor": "()Lforge/interfaces/IDevModeCheats;",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "macros",
+    "Descriptor": "()Lforge/interfaces/IMacroSystem;",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "nextGameDecision",
+    "Descriptor": "(Lforge/gamemodes/match/NextGameDecision;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "getActivateDescription",
+    "Descriptor": "(Lforge/game/card/CardView;)Ljava/lang/String;",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "reorderHand",
+    "Descriptor": "(Lforge/game/card/CardView;I)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "requestResync",
+    "Descriptor": "()V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "shouldAutoYield",
+    "Descriptor": "(Ljava/lang/String;)Z",
+    "Access": 1,
+    "Direction": "host-to-engine",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "setShouldAutoYield",
+    "Descriptor": "(Ljava/lang/String;ZZ)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "setDisableAutoYields",
+    "Descriptor": "(Z)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "getTriggerDecision",
+    "Descriptor": "(Ljava/lang/String;)Lforge/player/AutoYieldStore$TriggerDecision;",
+    "Access": 1,
+    "Direction": "host-to-engine",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "setTriggerDecision",
+    "Descriptor": "(Ljava/lang/String;Lforge/player/AutoYieldStore$TriggerDecision;Z)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "setDisableAutoTriggers",
+    "Descriptor": "(Z)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "applyYieldUpdate",
+    "Descriptor": "(Lforge/gamemodes/match/YieldUpdate;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "sendYieldUpdate",
+    "Descriptor": "(Lforge/gamemodes/match/YieldUpdate;)V",
+    "Access": 1,
+    "Direction": "host-to-engine",
+    "Abstract": false
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "getYieldController",
+    "Descriptor": "()Lforge/gamemodes/match/YieldController;",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  },
+  {
+    "Owner": "forge/interfaces/IGameController",
+    "Name": "setYieldPref",
+    "Descriptor": "(Lforge/localinstance/properties/ForgePreferences$FPref;Ljava/lang/String;)V",
+    "Access": 1025,
+    "Direction": "host-to-engine",
+    "Abstract": true
+  }
+]
